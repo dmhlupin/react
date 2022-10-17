@@ -21,6 +21,7 @@ export class Form extends React.Component {
             <button type="button" onClick={this.handleClick}>Click</button>
 
             <hr />
+            <hr />
             <p>Name: {this.state.name}</p>
             <input type="text" onChange={this.handleChangeName}/>
             
