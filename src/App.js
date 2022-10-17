@@ -1,13 +1,13 @@
-import logo from './logo.svg';
+
 import './App.css';
-import { Form } from './components/Form';
-import { Form as FormClass } from './class-components/Form';
+
+import { Message } from './components/Message/Message'
 
 export const App = () => {
+  const msg = 'Hello, world!'
   return (
     <div className="App">
-      {/* <Form /> */}
-      <FormClass />
+      <Message message={msg}/>
     </div>
   );
 }
