@@ -1,13 +1,15 @@
 
 import './App.css';
+import { Counter } from './components/Counter/Counter';
+import { Example } from './components/Example';
 
-import { Message } from './components/Message/Message'
+
 
 export const App = () => {
-  const msg = 'Hello, world!'
+  const count = 3
   return (
     <div className="App">
-      <Message message={msg}/>
+      <Example />
     </div>
   );
 }
