@@ -56,3 +56,11 @@
   width: 100px;
   color: #1976d2;
 }
+
+.chat-list {
+  margin-top: 20px;
+  margin-right: 20px;
+  display: flex;
+  flex-direction: column;
+}
+

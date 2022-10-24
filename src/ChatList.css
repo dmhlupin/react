@@ -16,13 +16,12 @@
     border-bottom: 1px solid;
     border-color: #1976d2;
     color: #1976d2;
-}
-
-.chat:hover {
-
-    background-color:#f0f0f0;
-}
-
-.chat-list header {
+  }
+  
+  .chat:hover {
+    background-color:#e7e7e7;
+  }
+  
+  .chat-list header {
     color: #1976d2;
-}
+  }
