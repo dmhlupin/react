@@ -1,0 +1,28 @@
+.chat-list {
+    margin-top: 20px;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.chat {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 5px;
+    margin-top: 5px;
+    min-width: 150px;
+    min-height: 30px;
+    border-bottom: 1px solid;
+    border-color: #1976d2;
+    color: #1976d2;
+}
+
+.chat:hover {
+
+    background-color:#f0f0f0;
+}
+
+.chat-list header {
+    color: #1976d2;
+}

@@ -1,4 +1,6 @@
-import { useState } from "react"
+import { Button, TextField, Stack } from "@mui/material";
+import SendIcon from '@mui/icons-material/Send';
+import { useEffect, useRef, useState } from "react"
 
 export const Form = ({onSubmit}) => {
     const [value, setValue] = useState('');
@@ -13,10 +15,28 @@ export const Form = ({onSubmit}) => {
         setValue('');
     }
 
+    const inputRef = useRef();
+
+    useEffect(() => {
+        console.log(inputRef);
+        inputRef.current?.focus();
+    }, []);
+
+    
+
     return (
         <form onSubmit = {handleSubmit}>
-            <input type="text" value={value} onChange = {handleInput}></input>
-            <button type="submit">Send message</button>
+            <Stack 
+                margin={2}
+                direction="row"
+                justifyContent="center"
+                alignItems="center"
+                spacing={2}>
+                
+                <TextField required value={value} onChange={handleInput} variant="filled" id="filled-required" label="Required" size="small" inputRef={inputRef}></TextField>
+                <Button type="submit" variant="outlined" size="large" endIcon={<SendIcon />} >Submit</Button>
+                
+            </Stack>
         </form>
     )
 }

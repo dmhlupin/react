@@ -1,5 +1,9 @@
 .App {
   text-align: center;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .App-logo {
@@ -35,4 +39,20 @@
   to {
     transform: rotate(360deg);
   }
+}
+.message-list {
+  margin-top: 20px;
+  flex-grow: 9;
+
+}
+.message {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.message-author {
+  width: 100px;
+  color: #1976d2;
 }

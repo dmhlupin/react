@@ -1,3 +1,3 @@
-export const Id =() => {
-    return Math.random();
+export const Id = () => {
+    return `msg-${Date.now()}-${Math.random()}`;
   }
