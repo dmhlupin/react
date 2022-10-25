@@ -1,13 +1,16 @@
 
 import { useEffect, useRef, useState } from 'react';
+
 import './App.css';
 import './ChatList.css';
+import './MessageBox.css';
 
 import { Form } from './components/Form';
 import { Id } from './components/GetId';
 import { MessageList } from './components/MessageList';
 import { AUTHORS } from './utils/constants';
 import { Chats } from './components/Chats';
+import { Header } from './components/Header';
 
 export const App = () => {
 
@@ -67,16 +70,19 @@ export const App = () => {
 
   return (
     <div className="App">
-      <div className='message-box'>
+      <Header />
+      <div className='main'>
+        <div className='message-box'>
+        <div className='chat-list'>
+          <header>Список чатов:</header>
+          <Chats chatList={chatList} />
+        </div>
+          <Form onSubmit={sendMessage}/>
+        </div>
+        <div className='message-list'>
+          <MessageList messageList = {messages} />
+        </div>
         
-        <Form onSubmit={sendMessage}/>
-      </div>
-      <div className='message-list'>
-        <MessageList messageList = {messages} />
-      </div>
-      <div className='chat-list'>
-        <header>Список чатов:</header>
-        <Chats chatList={chatList} />
       </div>
     </div>
 

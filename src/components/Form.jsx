@@ -33,8 +33,18 @@ export const Form = ({onSubmit}) => {
                 alignItems="center"
                 spacing={2}>
                 
-                <TextField required value={value} onChange={handleInput} variant="filled" id="filled-required" label="Required" size="small" inputRef={inputRef}></TextField>
-                <Button type="submit" variant="outlined" size="large" endIcon={<SendIcon />} >Submit</Button>
+                <TextField 
+                    required 
+                    value={value} 
+                    onChange={handleInput} 
+                    variant="filled" 
+                    id="filled-required" 
+                    label="Введите сообщение:" 
+                    size="small" 
+                    inputRef={inputRef}
+                    fullWidth>
+                </TextField>
+                <Button type="submit" variant="outlined" size="large" endIcon={<SendIcon />} >Отпарвить</Button>
                 
             </Stack>
         </form>
