@@ -55,7 +55,7 @@
 .message-list {
   margin-top: 20px;
   flex-grow: 1;
-  height: 89vh;
+  height: 87vh;
   overflow-y: scroll;
 
 }
