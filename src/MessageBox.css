@@ -1,6 +1,7 @@
 .message-box {
     border-right: 1px solid #1976d2;
-    min-height: 88vh;
+    min-height: 90vh;
+    
 }
 
 .message-box form div{
